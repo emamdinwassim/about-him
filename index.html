@@ -1,1367 +1,1273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trusted Professionals Mauritius | Your Personal 24/7 Service Network</title>
-  <meta name="description" content="Revolutionizing trust in Mauritius' service industry. Verified experts, guaranteed satisfaction, island-wide. Save +23059237053 for when you need us." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=IBM+Plex+Serif:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --primary: #1a365d;
-      --primary-dark: #0f2547;
-      --primary-light: #2d4d8c;
-      --secondary: #0e9f6e;
-      --secondary-dark: #057a55;
-      --accent: #f59e0b;
-      --accent-dark: #d97706;
-      --trust-blue: #3b82f6;
-      --trust-light: #60a5fa;
-      --light: #f8fafc;
-      --light-gray: #f1f5f9;
-      --medium-gray: #94a3b8;
-      --dark: #1e293b;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-heavy: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --border-radius: 12px;
-      --border-radius-lg: 20px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
-      background-color: var(--light);
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-family: 'IBM Plex Serif', serif;
-      font-weight: 600;
-      line-height: 1.2;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Psychological Trigger Bar */
-    .psych-bar {
-      background: linear-gradient(90deg, var(--primary-dark), var(--primary));
-      color: white;
-      padding: 14px 0;
-      text-align: center;
-      font-weight: 600;
-      font-size: 16px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1001;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      animation: pulse-bg 3s infinite alternate;
-    }
-
-    @keyframes pulse-bg {
-      0% { background: linear-gradient(90deg, var(--primary-dark), var(--primary)); }
-      100% { background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
-    }
-
-    .psych-bar strong {
-      color: var(--accent);
-      font-weight: 800;
-    }
-
-    /* Header */
-    header {
-      position: fixed;
-      top: 48px;
-      width: 100%;
-      z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    header.scrolled {
-      top: 0;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-icon {
-      background: linear-gradient(135deg, var(--secondary), var(--trust-blue));
-      color: white;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-    }
-
-    .logo-text {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--primary);
-      letter-spacing: -0.5px;
-    }
-
-    .logo-tagline {
-      font-size: 12px;
-      color: var(--secondary);
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-top: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 600;
-      font-size: 16px;
-      position: relative;
-      transition: var(--transition);
-    }
-
-    .nav-links a:hover {
-      color: var(--secondary);
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: var(--secondary);
-      left: 0;
-      bottom: -5px;
-      transition: var(--transition);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-cta {
-      background-color: var(--secondary);
-      color: white;
-      padding: 12px 28px;
-      border-radius: 50px;
-      font-weight: 700;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: var(--transition);
-      box-shadow: 0 4px 14px rgba(14, 159, 110, 0.3);
-    }
-
-    .nav-cta:hover {
-      background-color: var(--secondary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(14, 159, 110, 0.4);
-    }
-
-    .mobile-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: var(--primary);
-    }
-
-    /* Hero Section with Psychological Hook */
-    .hero {
-      padding: 220px 0 120px;
-      background: linear-gradient(135deg, rgba(26, 54, 93, 0.95) 0%, rgba(15, 37, 71, 0.97) 100%), url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
-    }
-
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero h1 {
-      font-size: 56px;
-      margin-bottom: 24px;
-      line-height: 1.1;
-    }
-
-    .hero h1 span {
-      background: linear-gradient(90deg, var(--accent), var(--trust-light));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .hero-subtitle {
-      font-size: 24px;
-      margin-bottom: 40px;
-      opacity: 0.9;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 300;
-    }
-
-    .hero-subtitle strong {
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .number-display {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      border-radius: var(--border-radius-lg);
-      padding: 30px;
-      margin: 40px auto;
-      max-width: 600px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .number-display::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-      transform: translateX(-100%);
-      animation: shimmer 3s infinite;
-    }
-
-    @keyframes shimmer {
-      100% { transform: translateX(100%); }
-    }
-
-    .number-display h3 {
-      font-size: 22px;
-      margin-bottom: 15px;
-      color: var(--accent);
-    }
-
-    .number-display .phone-number {
-      font-size: 42px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: white;
-      margin: 20px 0;
-      font-family: monospace;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.02); }
-      100% { transform: scale(1); }
-    }
-
-    .save-instruction {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--secondary);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 50px;
-      font-weight: 700;
-      margin-top: 15px;
-      animation: bounce 2s infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-    }
-
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
-
-    .whatsapp-btn {
-      background-color: #25D366;
-      color: white;
-      padding: 20px 40px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 20px;
-      display: inline-flex;
-      align-items: center;
-      gap: 15px;
-      transition: var(--transition);
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1da851;
-      transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-    }
-
-    .secondary-btn {
-      background-color: transparent;
-      color: white;
-      padding: 20px 40px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 20px;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      transition: var(--transition);
-    }
-
-    .secondary-btn:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      transform: translateY(-3px);
-      border-color: white;
-    }
-
-    /* Psychology Section - The Problem */
-    .psychology-section {
-      padding: 120px 0;
-      background-color: var(--light);
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 80px;
-    }
-
-    .section-title h2 {
-      font-size: 48px;
-      color: var(--primary);
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-    }
-
-    .section-title h2::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--secondary), var(--accent));
-      border-radius: 2px;
-    }
-
-    .section-title p {
-      font-size: 20px;
-      color: var(--medium-gray);
-      max-width: 800px;
-      margin: 30px auto 0;
-    }
-
-    .problem-solution {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-top: 60px;
-    }
-
-    .problem-card, .solution-card {
-      padding: 50px 40px;
-      border-radius: var(--border-radius-lg);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .problem-card {
-      background: linear-gradient(135deg, #fee2e2, #fecaca);
-      border-left: 8px solid #ef4444;
-    }
-
-    .solution-card {
-      background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-      border-left: 8px solid var(--trust-blue);
-    }
-
-    .problem-card h3, .solution-card h3 {
-      font-size: 32px;
-      margin-bottom: 25px;
-      color: var(--primary);
-    }
-
-    .problem-list, .solution-list {
-      list-style: none;
-    }
-
-    .problem-list li, .solution-list li {
-      margin-bottom: 18px;
-      font-size: 18px;
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .problem-list li i {
-      color: #ef4444;
-      font-size: 20px;
-      margin-top: 2px;
-      flex-shrink: 0;
-    }
-
-    .solution-list li i {
-      color: var(--secondary);
-      font-size: 20px;
-      margin-top: 2px;
-      flex-shrink: 0;
-    }
-
-    /* Night Service Section */
-    .night-service {
-      padding: 100px 0;
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .night-service::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    .night-service-content {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .night-service h2 {
-      font-size: 44px;
-      margin-bottom: 30px;
-    }
-
-    .night-service h2 span {
-      color: var(--accent);
-    }
-
-    .night-service p {
-      font-size: 22px;
-      margin-bottom: 40px;
-      opacity: 0.9;
-      line-height: 1.7;
-    }
-
-    .night-icon {
-      font-size: 80px;
-      color: var(--accent);
-      margin-bottom: 30px;
-      animation: twinkle 3s infinite alternate;
-    }
-
-    @keyframes twinkle {
-      0% { opacity: 0.7; transform: scale(1); }
-      100% { opacity: 1; transform: scale(1.1); }
-    }
-
-    /* Services Section */
-    .services {
-      padding: 120px 0;
-      background-color: var(--light-gray);
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 60px;
-    }
-
-    .service-card {
-      background-color: white;
-      border-radius: var(--border-radius);
-      padding: 40px 30px;
-      text-align: center;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-      border-top: 5px solid transparent;
-    }
-
-    .service-card:nth-child(1) { border-color: #3b82f6; }
-    .service-card:nth-child(2) { border-color: #10b981; }
-    .service-card:nth-child(3) { border-color: #f59e0b; }
-    .service-card:nth-child(4) { border-color: #8b5cf6; }
-    .service-card:nth-child(5) { border-color: #ef4444; }
-    .service-card:nth-child(6) { border-color: #06b6d4; }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-heavy);
-    }
-
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 5px;
-      background: inherit;
-      z-index: 2;
-    }
-
-    .service-icon {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--light-gray), white);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 25px;
-      color: var(--primary);
-      font-size: 32px;
-      transition: var(--transition);
-    }
-
-    .service-card:hover .service-icon {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      transform: rotateY(180deg);
-    }
-
-    .service-card h3 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: var(--primary);
-    }
-
-    .service-card p {
-      color: var(--medium-gray);
-      margin-bottom: 25px;
-    }
-
-    /* Trust Verification Section */
-    .trust-section {
-      padding: 120px 0;
-      background-color: white;
-    }
-
-    .trust-process {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-top: 60px;
-    }
-
-    .trust-step {
-      text-align: center;
-      padding: 40px 30px;
-      border-radius: var(--border-radius);
-      background-color: var(--light-gray);
-      transition: var(--transition);
-    }
-
-    .trust-step:hover {
-      transform: translateY(-5px);
-      background-color: white;
-      box-shadow: var(--shadow-heavy);
-    }
-
-    .step-number {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, var(--secondary), var(--trust-blue));
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: 700;
-      margin: 0 auto 25px;
-    }
-
-    /* Call to Action - Memory Imprint */
-    .memory-imprint {
-      padding: 120px 0;
-      background: linear-gradient(135deg, rgba(14, 159, 110, 0.05), rgba(59, 130, 246, 0.05));
-      text-align: center;
-    }
-
-    .memory-box {
-      background-color: white;
-      border-radius: var(--border-radius-lg);
-      padding: 60px 40px;
-      box-shadow: var(--shadow-heavy);
-      max-width: 900px;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-      border: 2px solid var(--secondary);
-    }
-
-    .memory-box h2 {
-      font-size: 42px;
-      color: var(--primary);
-      margin-bottom: 30px;
-    }
-
-    .memory-box h3 {
-      font-size: 32px;
-      color: var(--secondary);
-      margin-bottom: 30px;
-      font-weight: 800;
-    }
-
-    .phone-number-large {
-      font-size: 52px;
-      font-weight: 900;
-      color: var(--primary);
-      background: linear-gradient(90deg, var(--secondary), var(--trust-blue));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin: 30px 0;
-      letter-spacing: 3px;
-      font-family: monospace;
-      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .imprint-instruction {
-      font-size: 24px;
-      color: var(--primary);
-      margin-bottom: 40px;
-      font-weight: 600;
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--primary-dark);
-      color: white;
-      padding: 80px 0 40px;
-    }
-
-    .footer-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 50px;
-      margin-bottom: 60px;
-    }
-
-    .footer-column h3 {
-      font-size: 24px;
-      margin-bottom: 30px;
-      position: relative;
-      padding-bottom: 15px;
-    }
-
-    .footer-column h3::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 50px;
-      height: 3px;
-      background-color: var(--secondary);
-    }
-
-    .footer-links {
-      list-style: none;
-    }
-
-    .footer-links li {
-      margin-bottom: 15px;
-    }
-
-    .footer-links a {
-      color: #cbd5e1;
-      text-decoration: none;
-      transition: var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .footer-links a:hover {
-      color: white;
-      padding-left: 5px;
-    }
-
-    .copyright {
-      text-align: center;
-      padding-top: 40px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      color: #94a3b8;
-      font-size: 16px;
-    }
-
-    .copyright strong {
-      color: var(--accent);
-      font-weight: 800;
-    }
-
-    /* WhatsApp Float Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: linear-gradient(135deg, #25D366, #1da851);
-      color: white;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 36px;
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-      z-index: 999;
-      text-decoration: none;
-      transition: var(--transition);
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1100px) {
-      .hero h1 {
-        font-size: 48px;
-      }
-      
-      .problem-solution {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      
-      .phone-number-large {
-        font-size: 42px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .psych-bar {
-        font-size: 14px;
-        padding: 12px 0;
-      }
-      
-      header {
-        top: 42px;
-      }
-      
-      .mobile-toggle {
-        display: block;
-      }
-      
-      .nav-links {
-        position: fixed;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: var(--transition);
-        z-index: 999;
-        border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
-      }
-      
-      .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      .nav-cta {
-        display: none;
-      }
-      
-      .hero {
-        padding: 180px 0 80px;
-        background-attachment: scroll;
-      }
-      
-      .hero h1 {
-        font-size: 36px;
-      }
-      
-      .hero-subtitle {
-        font-size: 20px;
-      }
-      
-      .number-display .phone-number {
-        font-size: 32px;
-      }
-      
-      .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .whatsapp-btn, .secondary-btn {
-        width: 100%;
-        max-width: 350px;
-        justify-content: center;
-        padding: 18px 30px;
-      }
-      
-      .section-title h2 {
-        font-size: 36px;
-      }
-      
-      .night-service h2 {
-        font-size: 36px;
-      }
-      
-      .phone-number-large {
-        font-size: 32px;
-        letter-spacing: 2px;
-      }
-      
-      .memory-box h2 {
-        font-size: 32px;
-      }
-      
-      .memory-box h3 {
-        font-size: 26px;
-      }
-      
-      .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
-        bottom: 20px;
-        right: 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-      
-      .number-display .phone-number {
-        font-size: 28px;
-        letter-spacing: 1px;
-      }
-      
-      .phone-number-large {
-        font-size: 28px;
-      }
-      
-      .section-title h2, .night-service h2 {
-        font-size: 30px;
-      }
-      
-      .problem-card, .solution-card {
-        padding: 40px 25px;
-      }
-      
-      .service-card {
-        padding: 30px 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Wassim Emamdin — Super Deals Mauritius</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wassim Emamdin — CEO & Founder of Super Deals Mauritius. Short & Long Term Rentals, Realty, Airbnb Superhost. Government Approved Agency.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --ocean:   #0a2342;
+  --deep:    #061529;
+  --lagoon:  #0e3d6e;
+  --teal:    #0fa3b1;
+  --teal2:   #7ecfda;
+  --sand:    #f4e9d0;
+  --sand2:   #e8d5aa;
+  --white:   #f8fafc;
+  --mist:    rgba(255,255,255,0.06);
+  --line:    rgba(14,163,177,0.2);
+  --text:    #a8c0d0;
+  --wa:      #25d366;
+  --sh: 0 8px 40px rgba(0,0,0,0.35);
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'Syne',sans-serif;
+  background:var(--deep);
+  color:var(--text);
+  overflow-x:hidden;
+  cursor:default;
+}
+
+/* GRAIN */
+body::after{
+  content:'';
+  position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9998;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--deep)}
+::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px}
+
+/* ══════════════════════════════════
+   NAV
+══════════════════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:28px 64px;
+  transition:all .4s;
+}
+nav.scrolled{
+  background:rgba(6,21,41,.92);
+  backdrop-filter:blur(20px);
+  padding:18px 64px;
+  border-bottom:1px solid var(--line);
+}
+.nav-brand{
+  display:flex;align-items:center;gap:14px;
+  text-decoration:none;
+}
+.nav-badge{
+  width:42px;height:42px;border-radius:10px;
+  background:linear-gradient(135deg,var(--teal),var(--lagoon));
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  box-shadow:0 4px 16px rgba(15,163,177,.4);
+}
+.nav-name{
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-weight:700;
+  color:var(--white);letter-spacing:.3px;
+  line-height:1.1;
+}
+.nav-name small{
+  display:block;font-family:'Syne',sans-serif;
+  font-size:9px;font-weight:400;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--teal2);
+}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{
+  font-size:11px;font-weight:500;letter-spacing:2px;
+  text-transform:uppercase;color:var(--text);
+  text-decoration:none;transition:color .2s;
+}
+.nav-links a:hover{color:var(--teal2)}
+.nav-wa-btn{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 22px;background:var(--wa);
+  color:#fff;text-decoration:none;
+  border-radius:100px;font-size:12px;font-weight:700;
+  letter-spacing:.5px;
+  box-shadow:0 4px 20px rgba(37,211,102,.3);
+  transition:all .25s;
+}
+.nav-wa-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(37,211,102,.5);
+}
+
+/* ══════════════════════════════════
+   HERO
+══════════════════════════════════ */
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  padding:130px 64px 80px;
+}
+
+/* Animated mesh BG */
+.hero-mesh{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 70% 90% at 85% 50%, rgba(14,163,177,.1) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 15% 20%, rgba(10,35,66,.95) 0%, transparent 65%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(6,21,41,.98) 0%, transparent 50%),
+    linear-gradient(160deg, #061529 0%, #0a2342 50%, #0e3d6e 100%);
+}
+
+/* Wave lines */
+.hero-waves{
+  position:absolute;right:-100px;top:50%;
+  transform:translateY(-50%);
+  width:700px;height:700px;
+  pointer-events:none;
+}
+.wave{
+  position:absolute;inset:0;
+  border-radius:50%;
+  border:1px solid rgba(14,163,177,.15);
+  animation:expand 4s ease-in-out infinite;
+}
+.wave:nth-child(2){animation-delay:1.3s;width:75%;height:75%;top:12.5%;left:12.5%}
+.wave:nth-child(3){animation-delay:2.6s;width:50%;height:50%;top:25%;left:25%}
+.wave:nth-child(4){
+  width:18%;height:18%;top:41%;left:41%;
+  background:radial-gradient(circle,rgba(14,163,177,.35),transparent);
+  border:none;
+  box-shadow:0 0 60px 20px rgba(14,163,177,.2);
+  animation:pulse-core 2s ease-in-out infinite;
+}
+@keyframes expand{
+  0%,100%{transform:scale(1);opacity:.6}
+  50%{transform:scale(1.05);opacity:.2}
+}
+@keyframes pulse-core{
+  0%,100%{transform:scale(1);opacity:.8}
+  50%{transform:scale(1.3);opacity:.4}
+}
+
+/* Floating Mauritius island shape */
+.island-float{
+  position:absolute;right:80px;top:50%;
+  transform:translateY(-52%);
+  width:420px;height:420px;
+  opacity:.07;
+  pointer-events:none;
+  font-size:380px;
+  line-height:1;
+  filter:blur(1px);
+}
+
+.hero-content{position:relative;z-index:2;max-width:620px}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  margin-bottom:24px;
+}
+.eyebrow-pill{
+  background:rgba(14,163,177,.15);
+  border:1px solid rgba(14,163,177,.3);
+  padding:6px 14px;border-radius:100px;
+  font-size:10px;font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;color:var(--teal2);
+}
+.eyebrow-verified{
+  display:flex;align-items:center;gap:6px;
+  font-size:10px;font-weight:500;letter-spacing:1px;
+  color:var(--wa);
+}
+.eyebrow-verified::before{
+  content:'✓';
+  width:18px;height:18px;border-radius:50%;
+  background:var(--wa);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:900;flex-shrink:0;
+  line-height:18px;text-align:center;
+}
+
+h1.hero-h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(48px,7.5vw,96px);
+  font-weight:900;line-height:.95;
+  letter-spacing:-2px;
+  color:var(--white);
+  margin-bottom:6px;
+}
+h1.hero-h1 em{
+  font-style:italic;
+  background:linear-gradient(135deg,var(--teal),var(--teal2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+.hero-role{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(16px,2vw,22px);
+  font-style:italic;font-weight:400;
+  color:var(--sand2);letter-spacing:.5px;
+  margin-bottom:30px;
+}
+
+.hero-divider{
+  width:80px;height:2px;
+  background:linear-gradient(90deg,var(--teal),transparent);
+  margin-bottom:28px;
+}
+
+.hero-desc{
+  font-size:15px;font-weight:300;line-height:1.85;
+  color:var(--text);max-width:500px;
+  margin-bottom:44px;
+}
+.hero-desc strong{color:var(--white);font-weight:600}
+
+.hero-badges{
+  display:flex;flex-wrap:wrap;gap:10px;
+  margin-bottom:40px;
+}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:7px 14px;
+  background:var(--mist);
+  border:1px solid var(--line);
+  border-radius:100px;
+  font-size:11px;font-weight:500;
+  color:var(--teal2);letter-spacing:.5px;
+}
+
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 36px;
+  background:var(--teal);
+  color:var(--deep);
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;text-decoration:none;
+  border-radius:3px;
+  box-shadow:0 6px 30px rgba(14,163,177,.4);
+  transition:all .3s;
+  position:relative;overflow:hidden;
+}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:var(--teal2);
+  transform:translateX(-101%);transition:transform .35s;
+}
+.btn-primary:hover::before{transform:translateX(0)}
+.btn-primary span{position:relative;z-index:1}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 36px;
+  border:1px solid rgba(255,255,255,.15);
+  color:var(--white);
+  font-size:13px;font-weight:500;letter-spacing:1px;
+  text-transform:uppercase;text-decoration:none;
+  border-radius:3px;transition:all .3s;
+}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal2);background:rgba(14,163,177,.08)}
+
+/* ══════════════════════════════════
+   TICKER / STATS
+══════════════════════════════════ */
+.ticker-bar{
+  background:var(--ocean);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;padding:0;
+}
+.ticker-inner{
+  display:flex;white-space:nowrap;
+  animation:ticker 22s linear infinite;
+  padding:18px 0;
+}
+.ticker-item{
+  display:inline-flex;align-items:center;gap:20px;
+  padding:0 28px;
+  font-size:12px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--teal);flex-shrink:0;
+}
+.ticker-item span{color:rgba(255,255,255,.2);font-size:16px}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.stats-row{
+  background:var(--ocean);
+  border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{
+  padding:40px 24px;text-align:center;
+  border-right:1px solid var(--line);
+  opacity:0;transform:translateY(20px);
+  transition:opacity .6s,transform .6s;
+}
+.stat:last-child{border-right:none}
+.stat.vis{opacity:1;transform:translateY(0)}
+.stat-n{
+  font-family:'Playfair Display',serif;
+  font-size:52px;font-weight:900;line-height:1;
+  background:linear-gradient(135deg,var(--teal),var(--teal2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  margin-bottom:8px;
+}
+.stat-l{
+  font-size:10px;font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;color:var(--text);
+}
+
+/* ══════════════════════════════════
+   SECTION COMMON
+══════════════════════════════════ */
+section{padding:100px 64px}
+.s-tag{
+  font-size:10px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:var(--teal);
+  display:inline-flex;align-items:center;gap:10px;
+  margin-bottom:14px;
+}
+.s-tag::before{content:'';width:28px;height:1px;background:var(--teal)}
+.s-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(34px,5vw,58px);
+  font-weight:800;line-height:1.05;
+  color:var(--white);letter-spacing:-1px;
+  margin-bottom:16px;
+}
+.s-title em{font-style:italic;color:var(--teal2)}
+.fade{
+  opacity:0;transform:translateY(32px);
+  transition:opacity .7s,transform .7s;
+}
+.fade.vis{opacity:1;transform:translateY(0)}
+.fade.d1{transition-delay:.1s}
+.fade.d2{transition-delay:.2s}
+.fade.d3{transition-delay:.3s}
+.fade.d4{transition-delay:.4s}
+
+/* ══════════════════════════════════
+   SERVICES
+══════════════════════════════════ */
+.services-sec{background:var(--deep)}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;margin-top:56px;
+}
+.svc{
+  background:var(--ocean);
+  padding:44px 36px;
+  position:relative;overflow:hidden;
+  transition:background .3s;
+  cursor:default;
+}
+.svc::after{
+  content:'';
+  position:absolute;
+  left:0;bottom:0;height:2px;width:0;
+  background:linear-gradient(90deg,var(--teal),var(--teal2));
+  transition:width .45s;
+}
+.svc:hover{background:var(--lagoon)}
+.svc:hover::after{width:100%}
+.svc-num{
+  position:absolute;top:20px;right:24px;
+  font-family:'Playfair Display',serif;
+  font-size:72px;font-weight:900;
+  color:rgba(14,163,177,.05);line-height:1;
+  pointer-events:none;
+}
+.svc-icon{font-size:38px;margin-bottom:22px;display:block}
+.svc-name{
+  font-family:'Playfair Display',serif;
+  font-size:22px;font-weight:700;
+  color:var(--white);margin-bottom:12px;
+}
+.svc-desc{
+  font-size:13px;font-weight:300;
+  line-height:1.85;color:var(--text);
+}
+.svc-link{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:22px;font-size:11px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--teal);text-decoration:none;
+  transition:gap .2s,color .2s;
+}
+.svc-link:hover{gap:14px;color:var(--teal2)}
+
+/* ══════════════════════════════════
+   ABOUT — SPLIT
+══════════════════════════════════ */
+.about-sec{
+  background:var(--ocean);
+  position:relative;overflow:hidden;
+}
+.about-sec::before{
+  content:'';
+  position:absolute;right:-200px;top:-200px;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(14,163,177,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:80px;align-items:center;
+  margin-top:56px;
+}
+.about-visual{position:relative}
+.about-card{
+  background:var(--lagoon);
+  border:1px solid var(--line);
+  padding:48px 40px;
+  border-radius:4px;
+  position:relative;overflow:hidden;
+}
+.about-card::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--teal2),var(--teal));
+}
+.about-avatar{
+  width:90px;height:90px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--lagoon));
+  display:flex;align-items:center;justify-content:center;
+  font-size:42px;margin:0 auto 24px;
+  border:3px solid rgba(14,163,177,.3);
+  box-shadow:0 8px 32px rgba(14,163,177,.25);
+}
+.about-card-name{
+  font-family:'Playfair Display',serif;
+  font-size:28px;font-weight:800;
+  color:var(--white);text-align:center;
+  margin-bottom:4px;
+}
+.about-card-role{
+  font-size:11px;font-weight:500;letter-spacing:2px;
+  text-transform:uppercase;color:var(--teal);
+  text-align:center;margin-bottom:28px;
+}
+.about-divider{width:40px;height:1px;background:var(--line);margin:0 auto 28px}
+.about-socials{
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+}
+.social-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 16px;
+  background:var(--mist);border:1px solid var(--line);
+  border-radius:100px;font-size:11px;font-weight:600;
+  color:var(--text);text-decoration:none;
+  transition:all .2s;
+}
+.social-chip:hover{border-color:var(--teal);color:var(--teal2)}
+.accent-block{
+  position:absolute;bottom:-16px;right:-16px;
+  width:120px;height:120px;
+  border:1px solid var(--line);
+  border-radius:4px;z-index:-1;
+}
+
+.about-text p{
+  font-size:15px;font-weight:300;
+  line-height:1.9;color:var(--text);margin-bottom:18px;
+}
+.about-text p strong{color:var(--white);font-weight:600}
+
+.about-highlights{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:14px;margin-top:32px;
+}
+.hl{
+  padding:18px;
+  background:rgba(14,163,177,.06);
+  border:1px solid rgba(14,163,177,.15);
+  border-radius:3px;
+}
+.hl-icon{font-size:20px;margin-bottom:8px;display:block}
+.hl-title{font-size:12px;font-weight:700;color:var(--teal2);margin-bottom:4px;letter-spacing:.5px}
+.hl-desc{font-size:11px;color:var(--text);line-height:1.6}
+
+/* ══════════════════════════════════
+   PROPERTIES BENTO
+══════════════════════════════════ */
+.props-sec{background:var(--deep)}
+.bento{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto auto;
+  gap:16px;margin-top:56px;
+}
+.bento-card{
+  background:var(--ocean);
+  border:1px solid var(--line);
+  border-radius:8px;overflow:hidden;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+  cursor:default;
+}
+.bento-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--teal);
+  box-shadow:0 16px 48px rgba(14,163,177,.2);
+}
+.bento-card.featured{
+  grid-column:span 2;
+  display:grid;grid-template-columns:1fr 1fr;
+}
+.bento-img{
+  background:var(--lagoon);
+  display:flex;align-items:center;justify-content:center;
+  font-size:64px;
+  min-height:180px;
+  position:relative;overflow:hidden;
+}
+.bento-img::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(14,163,177,.1),transparent);
+}
+.bento-card.featured .bento-img{min-height:auto;font-size:100px}
+.bento-body{padding:24px}
+.bento-tag{
+  display:inline-block;
+  padding:4px 10px;border-radius:100px;
+  font-size:9px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;
+  background:rgba(14,163,177,.15);
+  color:var(--teal2);margin-bottom:10px;
+}
+.bento-name{
+  font-family:'Playfair Display',serif;
+  font-size:20px;font-weight:700;
+  color:var(--white);margin-bottom:8px;
+}
+.bento-card.featured .bento-name{font-size:26px}
+.bento-desc{
+  font-size:12px;font-weight:300;
+  line-height:1.7;color:var(--text);
+}
+.bento-link{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:16px;font-size:11px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  color:var(--teal);text-decoration:none;
+  transition:gap .2s;
+}
+.bento-link:hover{gap:12px}
+.bento-superhost{
+  position:absolute;top:14px;right:14px;
+  background:#ff385c;color:#fff;
+  padding:5px 10px;border-radius:100px;
+  font-size:9px;font-weight:800;letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+/* ══════════════════════════════════
+   COMMUNITY
+══════════════════════════════════ */
+.community-sec{
+  background:var(--ocean);
+  position:relative;overflow:hidden;
+}
+.community-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:24px;margin-top:56px;
+}
+.comm-card{
+  background:var(--lagoon);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:36px;
+  transition:transform .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.comm-card::before{
+  content:'';position:absolute;
+  top:0;left:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--teal),transparent);
+}
+.comm-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.comm-platform{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:20px;
+}
+.comm-logo{
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;
+  background:var(--mist);border:1px solid var(--line);
+}
+.comm-pname{
+  font-size:15px;font-weight:700;color:var(--white);
+}
+.comm-handle{font-size:11px;color:var(--teal);letter-spacing:.5px}
+.comm-stat{
+  font-family:'Playfair Display',serif;
+  font-size:44px;font-weight:900;
+  background:linear-gradient(135deg,var(--teal),var(--teal2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  line-height:1;margin-bottom:6px;
+}
+.comm-stat-l{
+  font-size:11px;font-weight:500;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--text);
+  margin-bottom:16px;
+}
+.comm-desc{
+  font-size:13px;font-weight:300;
+  line-height:1.7;color:var(--text);
+}
+.comm-link{
+  display:inline-flex;align-items:center;gap:7px;
+  margin-top:18px;font-size:11px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  color:var(--teal);text-decoration:none;
+  transition:gap .2s;
+}
+.comm-link:hover{gap:13px}
+
+/* ══════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════ */
+.testi-sec{background:var(--deep)}
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;margin-top:56px;
+}
+.testi-card{
+  background:var(--ocean);border:1px solid var(--line);
+  border-radius:6px;padding:36px;
+  position:relative;
+  transition:border-color .3s,transform .3s;
+}
+.testi-card:hover{border-color:var(--teal);transform:translateY(-4px)}
+.testi-quote{
+  font-family:'Playfair Display',serif;
+  font-size:72px;color:var(--teal);opacity:.12;
+  position:absolute;top:-8px;left:22px;
+  line-height:1;pointer-events:none;
+}
+.stars{color:var(--teal);font-size:12px;letter-spacing:2px;margin-bottom:14px}
+.testi-text{
+  font-size:14px;font-weight:300;line-height:1.85;
+  color:var(--text);font-style:italic;margin-bottom:24px;
+}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-av{
+  width:42px;height:42px;border-radius:50%;
+  background:var(--lagoon);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+}
+.testi-name{font-size:13px;font-weight:700;color:var(--white)}
+.testi-role{font-size:11px;color:var(--teal);margin-top:2px}
+
+/* ══════════════════════════════════
+   CONTACT / CTA
+══════════════════════════════════ */
+.contact-sec{
+  background:var(--ocean);
+  text-align:center;
+  padding:120px 64px;
+  position:relative;overflow:hidden;
+}
+.contact-sec::before{
+  content:'';position:absolute;
+  width:900px;height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(14,163,177,.06) 0%,transparent 65%);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.contact-intro{
+  font-size:15px;font-weight:300;line-height:1.85;
+  color:var(--text);max-width:500px;margin:0 auto 50px;
+}
+.contact-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:16px;max-width:700px;margin:0 auto 44px;
+}
+.contact-card{
+  background:var(--lagoon);border:1px solid var(--line);
+  border-radius:6px;padding:24px 20px;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  text-decoration:none;
+  transition:all .25s;
+}
+.contact-card:hover{border-color:var(--teal);transform:translateY(-3px)}
+.cc-icon{font-size:28px}
+.cc-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal)}
+.cc-val{font-size:12px;font-weight:500;color:var(--white)}
+
+.wa-hero-btn{
+  display:inline-flex;align-items:center;gap:14px;
+  padding:22px 56px;background:var(--wa);
+  color:#fff;font-family:'Syne',sans-serif;
+  font-size:15px;font-weight:700;letter-spacing:.5px;
+  text-decoration:none;border-radius:4px;
+  box-shadow:0 10px 50px rgba(37,211,102,.4);
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.wa-hero-btn::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,.1);
+  transform:translateX(-101%);transition:transform .3s;
+}
+.wa-hero-btn:hover::before{transform:translateX(0)}
+.wa-hero-btn:hover{transform:translateY(-3px);box-shadow:0 18px 60px rgba(37,211,102,.55)}
+.wa-hero-btn .wa-ico{font-size:26px}
+
+.brn-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:32px;
+  background:rgba(14,163,177,.08);
+  border:1px solid rgba(14,163,177,.2);
+  border-radius:100px;padding:10px 20px;
+  font-size:11px;font-weight:500;letter-spacing:.5px;color:var(--teal2);
+}
+
+/* ══════════════════════════════════
+   FOOTER
+══════════════════════════════════ */
+footer{
+  background:var(--deep);
+  border-top:1px solid var(--line);
+  padding:36px 64px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.footer-brand{
+  font-family:'Playfair Display',serif;
+  font-size:20px;font-weight:700;color:var(--white);
+}
+.footer-brand span{color:var(--teal)}
+.footer-copy{font-size:11px;color:var(--text);opacity:.5;letter-spacing:.5px}
+.footer-right{display:flex;align-items:center;gap:16px}
+.footer-social{
+  width:36px;height:36px;border-radius:8px;
+  background:var(--mist);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;text-decoration:none;
+  transition:all .2s;
+}
+.footer-social:hover{border-color:var(--teal);background:rgba(14,163,177,.1)}
+
+/* ══════════════════════════════════
+   FLOAT WA
+══════════════════════════════════ */
+.float-wa{
+  position:fixed;bottom:30px;right:30px;z-index:800;
+  width:62px;height:62px;border-radius:50%;
+  background:var(--wa);
+  display:flex;align-items:center;justify-content:center;
+  font-size:30px;text-decoration:none;
+  box-shadow:0 8px 36px rgba(37,211,102,.5);
+  animation:popIn .6s 1s both;
+  transition:all .3s;
+}
+.float-wa:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 16px 50px rgba(37,211,102,.7)}
+.ripple{
+  position:fixed;bottom:30px;right:30px;z-index:799;
+  width:62px;height:62px;border-radius:50%;
+  border:2px solid rgba(37,211,102,.4);
+  animation:ripple 2.5s 1.8s infinite;
+  pointer-events:none;
+}
+.ripple2{animation-delay:3.1s}
+@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes ripple{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.6);opacity:0}}
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media(max-width:900px){
+  nav{padding:18px 24px}
+  nav.scrolled{padding:14px 24px}
+  .nav-links{display:none}
+  section{padding:70px 24px}
+  .hero{padding:110px 24px 70px}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .stat{border-right:none;border-bottom:1px solid var(--line)}
+  .services-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .bento{grid-template-columns:1fr}
+  .bento-card.featured{grid-column:span 1;grid-template-columns:1fr}
+  .community-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-sec{padding:80px 24px}
+  footer{flex-direction:column;gap:16px;text-align:center;padding:28px 24px}
+  .hero-waves{opacity:.4;right:-200px}
+}
+</style>
 </head>
 <body>
-  <!-- Psychological Trigger Bar -->
-  <div class="psych-bar">
-    <span>⚠️ <strong>SAVE THIS NUMBER NOW:</strong> +230 5923 7053 - You'll need it later when a service emergency strikes!</span>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-brand">
+    <div class="nav-badge">🏠</div>
+    <div class="nav-name">
+      Super Deals Mauritius
+      <small>Wassim Emamdin · CEO & Founder</small>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#properties">Properties</a>
+    <a href="#community">Community</a>
+    <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" class="nav-wa-btn">💬 WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-mesh"></div>
+  <div class="hero-waves">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
   </div>
 
-  <!-- Header -->
-  <header id="header">
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <div class="logo-icon">
-            <i class="fas fa-shield-check"></i>
-          </div>
-          <div>
-            <div class="logo-text">TrustedPros Mauritius</div>
-            <div class="logo-tagline">VERIFIED PROFESSIONALS NETWORK</div>
-          </div>
-        </div>
-        
-        <div class="mobile-toggle" id="mobileToggle">
-          <i class="fas fa-bars"></i>
-        </div>
-        
-        <div class="nav-links" id="navLinks">
-          <a href="#psychology">The Trust Problem</a>
-          <a href="#services">Our Services</a>
-          <a href="#night">Night Service</a>
-          <a href="#trust">Verification</a>
-          <a href="#memory">Save Number</a>
-          <a href="https://wa.me/23059237053" class="nav-cta">
-            <i class="fab fa-whatsapp"></i> WhatsApp Now
-          </a>
-        </div>
-      </nav>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-pill">🇲🇺 Mauritius</div>
+      <div class="eyebrow-verified">Government Approved Agency · BRN C22188781</div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Finally, <span>Trustworthy Professionals</span> in Mauritius</h1>
-        <p class="hero-subtitle">We've solved the #1 problem homeowners and businesses face: <strong>not knowing who to trust.</strong> Every expert is verified, background-checked, and guaranteed.</p>
-        
-        <div class="number-display">
-          <h3><i class="fas fa-save"></i> SAVE THIS NUMBER IN YOUR PHONE NOW</h3>
-          <div class="phone-number">+230 5923 7053</div>
-          <p>You don't need us now, but you'll be grateful you saved this number when an emergency happens at 9 PM or when a mechanic tries to overcharge you.</p>
-          <div class="save-instruction">
-            <i class="fas fa-mobile-alt"></i> Save as "Trusted Pros Mauritius"
-          </div>
-        </div>
-        
-        <div class="cta-buttons">
-          <a href="https://wa.me/23059237053" class="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i> WhatsApp for Immediate Help
-          </a>
-          <a href="#psychology" class="secondary-btn">
-            <i class="fas fa-question-circle"></i> Why This Is Different
-          </a>
-        </div>
-      </div>
+    <h1 class="hero-h1">Wassim<br><em>Emamdin</em></h1>
+    <p class="hero-role">CEO & Founder — Super Deals Mauritius Co Ltd</p>
+    <div class="hero-divider"></div>
+
+    <p class="hero-desc">
+      Your trusted partner for <strong>short & long-term rentals</strong>, realty, and Airbnb hosting across Mauritius. 
+      With a proven track record, government approval, and over <strong>19,000+ community members</strong> — 
+      excellence is the standard, not the exception.
+    </p>
+
+    <div class="hero-badges">
+      <div class="badge">🏅 Airbnb Superhost</div>
+      <div class="badge">✅ Govt. Approved Agency</div>
+      <div class="badge">🏢 Emamdin Wassim Realty</div>
+      <div class="badge">📱 17K TikTok Followers</div>
     </div>
-  </section>
 
-  <!-- Psychology Section - The Problem -->
-  <section class="psychology-section" id="psychology">
-    <div class="container">
-      <div class="section-title">
-        <h2>The Psychology of Distrust</h2>
-        <p>Why 78% of Mauritians hesitate to call a service professional—and how we've solved it forever.</p>
-      </div>
-      
-      <div class="problem-solution">
-        <div class="problem-card">
-          <h3><i class="fas fa-exclamation-triangle"></i> The Problem</h3>
-          <ul class="problem-list">
-            <li><i class="fas fa-times-circle"></i> <strong>Fear of being overcharged:</strong> "Will they quote me a fair price or triple it?"</li>
-            <li><i class="fas fa-times-circle"></i> <strong>Unqualified "experts":</strong> "Are they actually trained or just pretending?"</li>
-            <li><i class="fas fa-times-circle"></i> <strong>No accountability:</strong> "If they do a bad job, who do I complain to?"</li>
-            <li><i class="fas fa-times-circle"></i> <strong>Ghosting after payment:</strong> "Will they disappear if I pay upfront?"</li>
-            <li><i class="fas fa-times-circle"></i> <strong>No transparency:</strong> "What am I actually paying for?"</li>
-          </ul>
-        </div>
-        
-        <div class="solution-card">
-          <h3><i class="fas fa-check-circle"></i> Our Solution</h3>
-          <ul class="solution-list">
-            <li><i class="fas fa-shield-alt"></i> <strong>Pre-verified professionals:</strong> Background checks, certification verification</li>
-            <li><i class="fas fa-handshake"></i> <strong>Fixed, transparent pricing:</strong> You see the market rate before they arrive</li>
-            <li><i class="fas fa-star"></i> <strong>Rating system:</strong> Only 4.5+ star rated professionals on our platform</li>
-            <li><i class="fas fa-file-contract"></i> <strong>Service guarantee:</strong> We stand behind every job, or your money back</li>
-            <li><i class="fas fa-user-tie"></i> <strong>Professional conduct:</strong> Code of ethics that's strictly enforced</li>
-          </ul>
-        </div>
-      </div>
+    <div class="hero-ctas">
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20book%20or%20enquire%20about%20a%20property." target="_blank" class="btn-primary">
+        <span>💬 Book via WhatsApp</span>
+      </a>
+      <a href="#services" class="btn-ghost">Explore Services →</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Night Service Section -->
-  <section class="night-service" id="night">
-    <div class="container">
-      <div class="night-service-content">
-        <div class="night-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <h2><span>At Night, We Work For You</span></h2>
-        <p>When your pipe bursts at 10 PM, when your car won't start at 6 AM, when your electrical system fails during dinner—<strong>we answer.</strong> Most service companies close at 5 PM. We're different. Save our number. When the unexpected happens, we're here.</p>
-        
-        <div class="cta-buttons">
-          <a href="https://wa.me/23059237053?text=Emergency%20service%20needed" class="whatsapp-btn">
-            <i class="fas fa-bolt"></i> Emergency Service via WhatsApp
-          </a>
-        </div>
-      </div>
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <div class="ticker-item">Short Term Rentals <span>✦</span></div>
+    <div class="ticker-item">Long Term Rentals <span>✦</span></div>
+    <div class="ticker-item">Airbnb Superhost <span>✦</span></div>
+    <div class="ticker-item">Emamdin Wassim Realty <span>✦</span></div>
+    <div class="ticker-item">Govt. Approved <span>✦</span></div>
+    <div class="ticker-item">Tourism Mauritius <span>✦</span></div>
+    <div class="ticker-item">Property Management <span>✦</span></div>
+    <div class="ticker-item">17K TikTok <span>✦</span></div>
+    <!-- duplicate -->
+    <div class="ticker-item">Short Term Rentals <span>✦</span></div>
+    <div class="ticker-item">Long Term Rentals <span>✦</span></div>
+    <div class="ticker-item">Airbnb Superhost <span>✦</span></div>
+    <div class="ticker-item">Emamdin Wassim Realty <span>✦</span></div>
+    <div class="ticker-item">Govt. Approved <span>✦</span></div>
+    <div class="ticker-item">Tourism Mauritius <span>✦</span></div>
+    <div class="ticker-item">Property Management <span>✦</span></div>
+    <div class="ticker-item">17K TikTok <span>✦</span></div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat">
+    <div class="stat-n">19K<span style="font-size:28px">+</span></div>
+    <div class="stat-l">Facebook Community</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">17K<span style="font-size:28px">+</span></div>
+    <div class="stat-l">TikTok Followers</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">500<span style="font-size:28px">+</span></div>
+    <div class="stat-l">Happy Clients</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">⭐ 5.0</div>
+    <div class="stat-l">Airbnb Superhost Rating</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-sec" id="services">
+  <div class="s-tag">What We Offer</div>
+  <h2 class="s-title">Premium <em>Services</em><br>Across Mauritius</h2>
+  <div class="services-grid">
+
+    <div class="svc fade">
+      <span class="svc-icon">🏡</span>
+      <div class="svc-num">01</div>
+      <div class="svc-name">Short-Term Rentals</div>
+      <p class="svc-desc">Fully vetted holiday rentals and campements across Mauritius. Perfect for tourists, families, and weekend getaways. Browse and book instantly via WhatsApp.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20looking%20for%20a%20short-term%20rental%20in%20Mauritius." target="_blank" class="svc-link">Enquire Now →</a>
     </div>
-  </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Every Service You'll Ever Need</h2>
-        <p>One trusted network for all professional services across Mauritius. Verified experts only.</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-wrench"></i>
-          </div>
-          <h3>Trusted Mechanics</h3>
-          <p>No more guessing if you're being overcharged. Our mechanics provide transparent quotes before any work begins.</p>
-          <a href="https://wa.me/23059237053?text=Need%20a%20trusted%20mechanic" class="service-link">
-            Request Mechanic <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <h3>Electrical Experts</h3>
-          <p>Certified electricians for installations, repairs, and emergencies. Safety-certified and reliable.</p>
-          <a href="https://wa.me/23059237053?text=Need%20an%20electrician" class="service-link">
-            Request Electrician <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-faucet"></i>
-          </div>
-          <h3>Plumbing Specialists</h3>
-          <p>From leaky faucets to major installations. We fix it right the first time, with warranty.</p>
-          <a href="https://wa.me/23059237053?text=Need%20a%20plumber" class="service-link">
-            Request Plumber <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>Home Maintenance</h3>
-          <p>Cleaning, repairs, painting, and all home services. Professionals who treat your home with respect.</p>
-          <a href="https://wa.me/23059237053?text=Need%20home%20maintenance" class="service-link">
-            Request Service <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-tv"></i>
-          </div>
-          <h3>Installation Services</h3>
-          <p>TV mounting, furniture assembly, appliance setup. Done correctly with proper tools.</p>
-          <a href="https://wa.me/23059237053?text=Need%20installation%20help" class="service-link">
-            Request Installer <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-taxi"></i>
-          </div>
-          <h3>Reliable Transport</h3>
-          <p>Professional drivers for airport transfers, business meetings, and special occasions.</p>
-          <a href="https://wa.me/23059237053?text=Need%20transportation" class="service-link">
-            Request Driver <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+    <div class="svc fade d1">
+      <span class="svc-icon">📋</span>
+      <div class="svc-num">02</div>
+      <div class="svc-name">Long-Term Rentals</div>
+      <p class="svc-desc">Reliable long-term rental solutions for expats, residents, and businesses. Full documentation, legal compliance, and ongoing property management included.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20interested%20in%20a%20long-term%20rental." target="_blank" class="svc-link">Enquire Now →</a>
     </div>
-  </section>
 
-  <!-- Trust Verification Section -->
-  <section class="trust-section" id="trust">
-    <div class="container">
-      <div class="section-title">
-        <h2>How We Verify Trust</h2>
-        <p>Our 5-step verification process ensures you only get genuine, qualified professionals.</p>
+    <div class="svc fade d2">
+      <span class="svc-icon">🏢</span>
+      <div class="svc-num">03</div>
+      <div class="svc-name">Realty & Property Sales</div>
+      <p class="svc-desc">Through Emamdin Wassim Realty, we connect buyers and sellers across the island. Expert valuations, negotiations, and seamless transactions you can trust.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20interested%20in%20buying%20or%20selling%20property." target="_blank" class="svc-link">Enquire Now →</a>
+    </div>
+
+    <div class="svc fade">
+      <span class="svc-icon">🛎️</span>
+      <div class="svc-num">04</div>
+      <div class="svc-name">Airbnb Management</div>
+      <p class="svc-desc">As an official Airbnb Superhost, we manage your property listing end-to-end — photography, pricing, guest communication, check-ins, and reviews. Hands-free income.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20you%20to%20manage%20my%20Airbnb%20listing." target="_blank" class="svc-link">Enquire Now →</a>
+    </div>
+
+    <div class="svc fade d1">
+      <span class="svc-icon">🌴</span>
+      <div class="svc-num">05</div>
+      <div class="svc-name">Tourism Experiences</div>
+      <p class="svc-desc">Curated local experiences and tourism packages helping visitors discover the real Mauritius. Partnered with top local operators for authentic island adventures.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20looking%20for%20tourism%20experiences%20in%20Mauritius." target="_blank" class="svc-link">Enquire Now →</a>
+    </div>
+
+    <div class="svc fade d2">
+      <span class="svc-icon">📈</span>
+      <div class="svc-num">06</div>
+      <div class="svc-name">Property Marketing</div>
+      <p class="svc-desc">Leverage our 19K+ Facebook community and 17K TikTok following to market your property. Maximum exposure, minimum effort — results that speak for themselves.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20market%20my%20property%20through%20your%20platform." target="_blank" class="svc-link">Enquire Now →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div class="s-tag">The Man Behind It</div>
+  <h2 class="s-title">Meet <em>Wassim</em></h2>
+  <div class="about-grid">
+
+    <div class="about-visual fade">
+      <div class="about-card">
+        <div class="about-avatar">👨‍💼</div>
+        <div class="about-card-name">Wassim Emamdin</div>
+        <div class="about-card-role">CEO & Managing Director</div>
+        <div class="about-divider"></div>
+        <div class="about-socials">
+          <a href="https://wa.me/23059237053" target="_blank" class="social-chip">💬 WhatsApp</a>
+          <a href="https://www.facebook.com/superdeals.mu" target="_blank" class="social-chip">📘 Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=100069769872595" target="_blank" class="social-chip">👤 Profile</a>
+          <a href="mailto:emamdinwassim24@gmail.com" class="social-chip">✉️ Email</a>
+          <a href="https://www.instagram.com/wassim.emamdin/" target="_blank" class="social-chip">📸 Instagram</a>
+        </div>
       </div>
-      
-      <div class="trust-process">
-        <div class="trust-step">
-          <div class="step-number">1</div>
-          <h3>Background Check</h3>
-          <p>Comprehensive criminal and reference checks for every professional.</p>
+      <div class="accent-block"></div>
+    </div>
+
+    <div class="about-text fade d1">
+      <p>
+        <strong>Wassim Emamdin</strong> is the Managing Director and CEO of <strong>Super Deals Mauritius Co Ltd</strong> — a government-approved online reservation agency that has become one of Mauritius's most trusted names in property rentals.
+      </p>
+      <p>
+        Before founding his companies, Wassim built deep expertise as a <strong>marketing manager across multiple hotels</strong> in Mauritius, giving him a unique understanding of hospitality, client expectations, and what truly makes a property stand out.
+      </p>
+      <p>
+        Today, he runs <strong>Emamdin Wassim Realty</strong>, holds an official <strong>Airbnb Superhost</strong> status, and leads a thriving online community of over 19,000 property enthusiasts through his Facebook group <em>Soizir Zot Campment Dans Maurice</em>.
+      </p>
+      <div class="about-highlights">
+        <div class="hl">
+          <span class="hl-icon">🏅</span>
+          <div class="hl-title">Airbnb Superhost</div>
+          <div class="hl-desc">Certified top-tier Airbnb host with 5-star hospitality standards.</div>
         </div>
-        
-        <div class="trust-step">
-          <div class="step-number">2</div>
-          <h3>Skill Verification</h3>
-          <p>Certification validation and practical skill assessments.</p>
+        <div class="hl">
+          <span class="hl-icon">🏛️</span>
+          <div class="hl-title">Govt. Approved</div>
+          <div class="hl-desc">Fully registered agency — BRN: C22188781.</div>
         </div>
-        
-        <div class="trust-step">
-          <div class="step-number">3</div>
-          <h3>Customer Reviews</h3>
-          <p>Minimum 4.5-star average rating from previous clients required.</p>
+        <div class="hl">
+          <span class="hl-icon">🏨</span>
+          <div class="hl-title">Hotel Background</div>
+          <div class="hl-desc">Years of hotel marketing expertise shapes every client interaction.</div>
         </div>
-        
-        <div class="trust-step">
-          <div class="step-number">4</div>
-          <h3>Pricing Audit</h3>
-          <p>Regular market rate comparisons to ensure fair pricing.</p>
-        </div>
-        
-        <div class="trust-step">
-          <div class="step-number">5</div>
-          <h3>Continuous Monitoring</h3>
-          <p>Ongoing performance tracking and client feedback analysis.</p>
+        <div class="hl">
+          <span class="hl-icon">📱</span>
+          <div class="hl-title">Digital Reach</div>
+          <div class="hl-desc">19K Facebook + 17K TikTok — unmatched local exposure.</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Memory Imprint Section -->
-  <section class="memory-imprint" id="memory">
-    <div class="container">
-      <div class="memory-box">
-        <h2>The Number You'll Be Grateful You Saved</h2>
-        <h3><i class="fas fa-brain"></i> Psychological Memory Imprint</h3>
-        <p class="imprint-instruction">Your brain is wired to remember things you visualize. Look at this number for 10 seconds:</p>
-        
-        <div class="phone-number-large">+230 5923 7053</div>
-        
-        <p style="font-size: 20px; margin-bottom: 40px; color: var(--primary);">
-          <strong>Say it out loud:</strong> "Plus two-three-zero, five-nine-two-three, seven-zero-five-three"
-        </p>
-        
-        <div class="cta-buttons">
-          <a href="https://wa.me/23059237053" class="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i> Save & Test Connection
-          </a>
-        </div>
-        
-        <p style="margin-top: 40px; color: var(--medium-gray);">
-          <i class="fas fa-lightbulb"></i> <strong>Pro Tip:</strong> Save as "Emergency Pros Mauritius" in your contacts. When you need help, you won't have to search.
-        </p>
+<!-- PROPERTIES BENTO -->
+<section class="props-sec" id="properties">
+  <div class="s-tag">Featured Listings</div>
+  <h2 class="s-title">Island <em>Properties</em><br>Awaiting You</h2>
+  <div class="bento">
+
+    <div class="bento-card featured fade">
+      <div class="bento-img" style="background:linear-gradient(135deg,#0e3d6e,#0a2342)">
+        🌊
+        <div class="bento-superhost">⭐ Superhost</div>
+      </div>
+      <div class="bento-body">
+        <div class="bento-tag">Featured · Short Term</div>
+        <div class="bento-name">Beachside Campement Mauritius</div>
+        <p class="bento-desc">Stunning beachside escapes across Grand Baie, Flic en Flac, and beyond. Fully furnished, MTA-licensed, ideal for 4–10 guests. WhatsApp to check availability instantly.</p>
+        <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20interested%20in%20viewing%20a%20beachside%20campement." target="_blank" class="bento-link">Check Availability →</a>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>TrustedPros Mauritius</h3>
-          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.8;">
-            Revolutionizing trust in Mauritius' service industry. Verified experts, guaranteed satisfaction, island-wide coverage.
-          </p>
-          <div style="margin-top: 20px;">
-            <a href="https://wa.me/23059237053" class="whatsapp-btn" style="display: inline-flex; padding: 15px 30px; font-size: 18px;">
-              <i class="fab fa-whatsapp"></i> +230 5923 7053
-            </a>
-          </div>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Quick Access</h3>
-          <ul class="footer-links">
-            <li><a href="#psychology"><i class="fas fa-chevron-right"></i> The Trust Solution</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> All Services</a></li>
-            <li><a href="#night"><i class="fas fa-chevron-right"></i> Night Service</a></li>
-            <li><a href="#trust"><i class="fas fa-chevron-right"></i> Verification Process</a></li>
-            <li><a href="#memory"><i class="fas fa-chevron-right"></i> Save Our Number</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Emergency Services</h3>
-          <ul class="footer-links">
-            <li><a href="https://wa.me/23059237053?text=Emergency%20plumbing"><i class="fas fa-faucet"></i> Plumbing Emergency</a></li>
-            <li><a href="https://wa.me/23059237053?text=Emergency%20electrical"><i class="fas fa-bolt"></i> Electrical Emergency</a></li>
-            <li><a href="https://wa.me/23059237053?text=Car%20breakdown"><i class="fas fa-car-crash"></i> Car Breakdown</a></li>
-            <li><a href="https://wa.me/23059237053?text=Locked%20out"><i class="fas fa-key"></i> Locked Out</a></li>
-            <li><a href="https://wa.me/23059237053?text=Other%20emergency"><i class="fas fa-exclamation-triangle"></i> Other Emergency</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="copyright">
-        <p>© 2026 TrustedPros Mauritius. All rights reserved. | WhatsApp: <strong>+230 5923 7053</strong> | 24/7 Service Network</p>
-        <p style="margin-top: 15px;">"Save this number. You'll thank yourself later." — Wassim & Javed Emamdin, Founders</p>
+    <div class="bento-card fade d1">
+      <div class="bento-img" style="background:linear-gradient(135deg,#0a3d2e,#061529)">🌴</div>
+      <div class="bento-body">
+        <div class="bento-tag">Long Term</div>
+        <div class="bento-name">Furnished Apartments</div>
+        <p class="bento-desc">Modern furnished apartments for expats and professionals across Port Louis, Triolet, and Quatre Bornes.</p>
+        <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20looking%20for%20a%20long-term%20furnished%20apartment." target="_blank" class="bento-link">View Options →</a>
       </div>
     </div>
-  </footer>
 
-  <!-- WhatsApp Float Button -->
-  <a href="https://wa.me/23059237053" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
+    <div class="bento-card fade d2">
+      <div class="bento-img" style="background:linear-gradient(135deg,#3d1a0a,#1a0a06)">🏡</div>
+      <div class="bento-body">
+        <div class="bento-tag">For Sale</div>
+        <div class="bento-name">Residential Properties</div>
+        <p class="bento-desc">Houses and villas for sale through Emamdin Wassim Realty. Find your dream home in paradise.</p>
+        <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20looking%20to%20buy%20a%20property%20in%20Mauritius." target="_blank" class="bento-link">Browse Listings →</a>
+      </div>
+    </div>
+
+    <div class="bento-card fade d3">
+      <div class="bento-img" style="background:linear-gradient(135deg,#1a0a3d,#06061a)">🏢</div>
+      <div class="bento-body">
+        <div class="bento-tag">Commercial</div>
+        <div class="bento-name">Business Spaces</div>
+        <p class="bento-desc">Office spaces and commercial properties for growing businesses — flexible terms, prime locations.</p>
+        <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27m%20looking%20for%20a%20commercial%20space." target="_blank" class="bento-link">Enquire →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community-sec" id="community">
+  <div class="s-tag">Online Presence</div>
+  <h2 class="s-title">A Community<br><em>Built on Trust</em></h2>
+  <div class="community-grid">
+
+    <div class="comm-card fade">
+      <div class="comm-platform">
+        <div class="comm-logo">📘</div>
+        <div>
+          <div class="comm-pname">Super Deals Mauritius</div>
+          <div class="comm-handle">facebook.com/superdeals.mu</div>
+        </div>
+      </div>
+      <div class="comm-stat">111,700<span style="font-size:28px">+</span></div>
+      <div class="comm-stat-l">Likes &amp; Followers</div>
+      <p class="comm-desc">The go-to Facebook page for property deals in Mauritius. Daily listings, client testimonials, and real-time availability updates.</p>
+      <a href="https://www.facebook.com/superdeals.mu" target="_blank" class="comm-link">Visit Page →</a>
+    </div>
+
+    <div class="comm-card fade d1">
+      <div class="comm-platform">
+        <div class="comm-logo">🎵</div>
+        <div>
+          <div class="comm-pname">TikTok</div>
+          <div class="comm-handle">@wassimemamdin</div>
+        </div>
+      </div>
+      <div class="comm-stat">17,000<span style="font-size:28px">+</span></div>
+      <div class="comm-stat-l">TikTok Followers</div>
+      <p class="comm-desc">Property tours, rental reveals, and behind-the-scenes content that keeps Mauritius buzzing. Growing every single day.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%20saw%20your%20TikTok%20and%20I%27d%20like%20to%20enquire!" target="_blank" class="comm-link">Connect on WhatsApp →</a>
+    </div>
+
+    <div class="comm-card fade d2">
+      <div class="comm-platform">
+        <div class="comm-logo">👥</div>
+        <div>
+          <div class="comm-pname">Facebook Group</div>
+          <div class="comm-handle">Soizir Zot Campment Dans Maurice</div>
+        </div>
+      </div>
+      <div class="comm-stat">15,000<span style="font-size:28px">+</span></div>
+      <div class="comm-stat-l">Group Members</div>
+      <p class="comm-desc">Mauritius's largest property community group. A trusted space for listings, advice, and connections between owners and renters island-wide.</p>
+      <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%20found%20you%20from%20the%20group!" target="_blank" class="comm-link">Say Hello →</a>
+    </div>
+
+    <div class="comm-card fade d3">
+      <div class="comm-platform">
+        <div class="comm-logo">📸</div>
+        <div>
+          <div class="comm-pname">Instagram</div>
+          <div class="comm-handle">@wassim.emamdin</div>
+        </div>
+      </div>
+      <div class="comm-stat">⭐ 5.0</div>
+      <div class="comm-stat-l">Airbnb Superhost Rating</div>
+      <p class="comm-desc">Visual property showcases, guest experiences, and Mauritius lifestyle content across Instagram and Airbnb. Every stay rated 5 stars.</p>
+      <a href="https://www.instagram.com/wassim.emamdin/" target="_blank" class="comm-link">Follow →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi-sec" id="testimonials">
+  <div class="s-tag">Client Stories</div>
+  <h2 class="s-title">What People<br><em>Are Saying</em></h2>
+  <div class="testi-grid">
+
+    <div class="testi-card fade">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Wassim found us a stunning campement in Grand Baie within hours. The WhatsApp communication was instant and professional. We've already booked again for next month.</p>
+      <div class="testi-author">
+        <div class="testi-av">🙋‍♀️</div>
+        <div>
+          <div class="testi-name">Priya Ramchurn</div>
+          <div class="testi-role">Short-Term Rental Client</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade d1">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">I listed my villa with Wassim and within a week it was on Airbnb, Facebook, and TikTok. Fully booked for the season. Incredible reach and professionalism.</p>
+      <div class="testi-author">
+        <div class="testi-av">🙋‍♂️</div>
+        <div>
+          <div class="testi-name">Sanjay Bhoyroo</div>
+          <div class="testi-role">Property Owner, Flic en Flac</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade d2">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">As an expat relocating to Mauritius, I needed a long-term apartment fast. Wassim handled everything — paperwork, viewings, even helped me settle in. Exceptional service.</p>
+      <div class="testi-author">
+        <div class="testi-av">🧑‍💻</div>
+        <div>
+          <div class="testi-name">James Holloway</div>
+          <div class="testi-role">Long-Term Rental Client, UK</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="s-tag" style="justify-content:center">Get In Touch</div>
+  <h2 class="s-title" style="margin-bottom:18px">Let's Find Your<br><em>Perfect Property</em></h2>
+  <p class="contact-intro">
+    Whether you're looking to rent, buy, list, or invest — the fastest route to results is a single WhatsApp message to Wassim. Available 7 days a week.
+  </p>
+
+  <div class="contact-grid">
+    <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20enquire." target="_blank" class="contact-card">
+      <span class="cc-icon">💬</span>
+      <span class="cc-label">WhatsApp</span>
+      <span class="cc-val">+230 5923 7053</span>
+    </a>
+    <a href="tel:+23059237053" class="contact-card">
+      <span class="cc-icon">📞</span>
+      <span class="cc-label">Call Direct</span>
+      <span class="cc-val">+230 5923 7053</span>
+    </a>
+    <a href="mailto:emamdinwassim24@gmail.com" class="contact-card">
+      <span class="cc-icon">✉️</span>
+      <span class="cc-label">Email</span>
+      <span class="cc-val">Get in touch</span>
+    </a>
+  </div>
+
+  <a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" class="wa-hero-btn">
+    <span class="wa-ico">💬</span>
+    Start a Conversation on WhatsApp
   </a>
 
-  <script>
-    // Mobile Navigation Toggle
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navLinks = document.getElementById('navLinks');
-    
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      mobileToggle.innerHTML = navLinks.classList.contains('active') 
-        ? '<i class="fas fa-times"></i>' 
-        : '<i class="fas fa-bars"></i>';
-    });
-    
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
-      });
-    });
-    
-    // Header scroll effect
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('header');
-      const psychBar = document.querySelector('.psych-bar');
-      
-      if (window.scrollY > 100) {
-        header.classList.add('scrolled');
-        psychBar.style.top = '-100px';
-      } else {
-        header.classList.remove('scrolled');
-        psychBar.style.top = '0';
-      }
-    });
-    
-    // Service card animation on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    document.querySelectorAll('.service-card, .trust-step, .problem-card, .solution-card').forEach((el, index) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      el.style.transitionDelay = `${index * 0.1}s`;
-      observer.observe(el);
-    });
-    
-    // Number imprint animation
-    const phoneNumbers = document.querySelectorAll('.phone-number, .phone-number-large');
-    phoneNumbers.forEach(number => {
-      let originalText = number.textContent;
-      
-      // Create a subtle pulsing effect
-      setInterval(() => {
-        number.style.transform = 'scale(1.02)';
-        number.style.textShadow = '0 5px 15px rgba(0, 0, 0, 0.2)';
-        
-        setTimeout(() => {
-          number.style.transform = 'scale(1)';
-          number.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-        }, 300);
-      }, 3000);
-    });
-    
-    // Psychological trigger: Show save reminder after 10 seconds
-    setTimeout(() => {
-      const saveReminder = document.createElement('div');
-      saveReminder.innerHTML = `
-        <div style="position: fixed; bottom: 100px; right: 30px; background: linear-gradient(135deg, #0e9f6e, #3b82f6); color: white; padding: 20px; border-radius: 12px; z-index: 9999; box-shadow: 0 10px 30px rgba(0,0,0,0.2); max-width: 300px; animation: slideIn 0.5s ease;">
-          <h4 style="margin-bottom: 10px; font-size: 18px;"><i class="fas fa-save"></i> Did you save the number?</h4>
-          <p style="font-size: 14px; margin-bottom: 15px;">+230 5923 7053 - Save as "Trusted Pros"</p>
-          <button onclick="this.parentElement.style.display='none'" style="background: white; color: #0e9f6e; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; cursor: pointer;">I saved it</button>
-        </div>
-      `;
-      document.body.appendChild(saveReminder);
-      
-      // Auto-remove after 15 seconds
-      setTimeout(() => {
-        if (saveReminder.parentElement) {
-          saveReminder.style.opacity = '0';
-          saveReminder.style.transition = 'opacity 0.5s';
-          setTimeout(() => {
-            if (saveReminder.parentElement) saveReminder.parentElement.removeChild(saveReminder);
-          }, 500);
-        }
-      }, 15000);
-    }, 10000);
-  </script>
+  <div class="brn-badge">
+    🏛️ &nbsp;Super Deals Mauritius Co Ltd &nbsp;·&nbsp; BRN: C22188781 &nbsp;·&nbsp; Government Approved
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Super<span>Deals</span> Mauritius</div>
+  <div class="footer-copy">© 2025 Wassim Emamdin · All Rights Reserved · 🇲🇺 Mauritius</div>
+  <div class="footer-right">
+    <a href="https://www.facebook.com/superdeals.mu" target="_blank" class="footer-social">📘</a>
+    <a href="https://www.instagram.com/wassim.emamdin/" target="_blank" class="footer-social">📸</a>
+    <a href="mailto:emamdinwassim24@gmail.com" class="footer-social">✉️</a>
+    <a href="https://wa.me/23059237053" target="_blank" class="footer-social" style="background:rgba(37,211,102,.15);border-color:rgba(37,211,102,.3)">💬</a>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<div class="ripple"></div>
+<div class="ripple ripple2"></div>
+<a href="https://wa.me/23059237053?text=Hello%20Wassim%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" class="float-wa" title="Chat with Wassim on WhatsApp">💬</a>
+
+<script>
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+
+// Intersection Observer
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')});
+},{threshold:.14});
+document.querySelectorAll('.fade,.stat').forEach(el=>io.observe(el));
+
+// Stagger stats
+document.querySelectorAll('.stat').forEach((s,i)=>s.style.transitionDelay=`${i*.12}s`);
+
+// Smooth anchors
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));
+  if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+}));
+</script>
 </body>
 </html>
